@@ -1,0 +1,26 @@
+<br>
+<h5>Experiências</h5>
+<br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Data Inicial</th>
+            <th>Data Final</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let experience of experiencia" >
+            <td>{{experience.name}}</td>
+            <td>{{experience.position}}</td>
+            <td>{{experience.inicialdate}}</td>
+            <td>{{experience.finaldate}}</td>
+            <td><button type="button" class="btn btn-outline-dark">Detalhes</button></td>
+            
+
+        </tr>
+    </tbody>
+</table>
+
+

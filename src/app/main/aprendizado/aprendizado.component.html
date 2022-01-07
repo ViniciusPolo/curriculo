@@ -1,0 +1,45 @@
+<br>
+<h5>Formação</h5>
+<br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Área</th>
+            <th>Data Inicial</th>
+            <th>Data Final</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let formation of aprendizado">
+            <td>{{formation.name}}</td>
+            <td>{{formation.course}}</td>
+            <td>{{formation.area}}</td>
+            <td>{{formation.inicialdate}}</td>
+            <td>{{formation.finaldate}}</td>
+            <td><button type="button" class="btn btn-outline-dark">Detalhes</button></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h5>Cursos Extras</h5>
+<br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Área</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let course of curso">
+            <td>{{course.name}}</td>
+            <td>{{course.course}}</td>
+            <td>{{course.area}}</td>
+            <td><button type="button" class="btn btn-outline-dark">Detalhes</button></td>
+        </tr>
+    </tbody>
+</table>
+
