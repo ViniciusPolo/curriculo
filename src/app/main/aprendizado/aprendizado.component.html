@@ -31,6 +31,7 @@
             <th>Nome</th>
             <th>Curso</th>
             <th>Área</th>
+            <th>Informação</th>
         </tr>
     </thead>
     <tbody>
@@ -38,7 +39,7 @@
             <td>{{course.name}}</td>
             <td>{{course.course}}</td>
             <td>{{course.area}}</td>
-            <td><button type="button" class="btn btn-outline-dark">Detalhes</button></td>
+            <td><button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="{{course.detalhes}}" target="_blank">Detalhes</a></button></td>
         </tr>
     </tbody>
 </table>

@@ -36,6 +36,7 @@ export class Aprendizado implements OnInit{
                 name: 'Curso em Video',
                 course: 'Python Mundo I',
                 area: 'TI',
+                detalhes: 'https://www.cursoemvideo.com/certificates/certificado/?course_id=26338&cert-nonce=46d32e1767',
                 
             },
             {
@@ -43,6 +44,15 @@ export class Aprendizado implements OnInit{
                 name: 'Curso em Video',
                 course: 'Python Mundo II',
                 area: 'TI',
+                detalhes:'https://www.cursoemvideo.com/certificates/certificado/?course_id=26540&cert-nonce=fee8646f0b',
+                
+            },
+            {
+                id: 2,
+                name: 'Conquer',
+                course: 'Oratória',
+                area: 'Humanas',
+                detalhes:'',
                 
             },
             

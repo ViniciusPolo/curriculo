@@ -15,4 +15,5 @@ export class Cursos {
     name: string | any;
     course: string | any;
     area: string | any; 
+    detalhes: string | any;
 }

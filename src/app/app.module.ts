@@ -9,6 +9,8 @@ import { Experiencia } from './main/experiencias/experiencias.component';
 import { Aprendizado } from './main/aprendizado/aprendizado.component';
 import { CommonModule } from '@angular/common';
 import { NavBarBotton } from './main/navbar-botton/navbar-botton.component';
+import { MainPage } from './main/mainPage/mainPage.component';
+import { Projetos } from './main/projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NavBarBotton } from './main/navbar-botton/navbar-botton.component';
     NavBarBotton, 
     Experiencia,
     Aprendizado,
+    MainPage,
+    Projetos
   ],
   imports: [
     BrowserModule,
@@ -25,10 +29,16 @@ import { NavBarBotton } from './main/navbar-botton/navbar-botton.component';
     CommonModule,
     RouterModule.forChild([
       {
+        path: '', component: MainPage
+    },
+      {
           path: 'experiencia', component: Experiencia
       },
       {
           path: 'aprendizado', component: Aprendizado
+      },
+      {
+          path: 'projetos', component: Projetos
       }
   ])
     //Main
